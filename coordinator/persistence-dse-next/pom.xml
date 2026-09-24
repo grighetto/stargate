@@ -229,7 +229,7 @@
               <goal>run</goal>
             </goals>
             <configuration>
-              <tasks>
+              <target>
                 <!-- Remove root package classes -->
                 <delete>
                   <fileset dir="${project.build.directory}/sjk-core/" includes="*.class"/>
@@ -238,7 +238,7 @@
                   <fileset dir="${project.build.directory}/sjk-core"/>
                 </jar>
                 <delete dir="${project.build.directory}/sjk-core"/>
-              </tasks>
+              </target>
             </configuration>
           </execution>
         </executions>
